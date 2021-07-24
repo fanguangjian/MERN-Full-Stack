@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: /MERN-Full-Stack/mern-cloudmel-frontend/READEME.md
 -->
-# new 
+# new reat
 npx create-react-app client
 
 npm i bootstrap
@@ -15,3 +15,12 @@ npm i react-router-dom
 
 npm i react-rating
 npm install react-rating-stars-component --save
+
+# Node
+
+npm init
+
+npm i express
+npm i nodemon
+
+nodemon server
