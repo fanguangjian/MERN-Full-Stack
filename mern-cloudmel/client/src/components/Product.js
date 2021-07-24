@@ -5,9 +5,9 @@ import Rating from "react-rating";
 
 export default function Product({ pro }) {
   return (
-    <div className="col-md-3 m-5 card p-2 text-start">
-      <div>
-        <Link to={`product/${pro.id}`}>
+    <div className="col-md-3 m-5 card p-2 text-start" >
+      <div >
+        <Link to={`product/${pro._id}`}>
             <img src={pro.image} className="img-fluid" />
             <h1 style={{ "font-size": "18px" }}>{pro.name}</h1>        
             <Rating

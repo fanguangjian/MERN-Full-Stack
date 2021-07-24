@@ -16,6 +16,8 @@ npm i react-router-dom
 npm i react-rating
 npm install react-rating-stars-component --save
 
+npm i axios
+
 # Node
 
 npm init
@@ -24,3 +26,5 @@ npm i express
 npm i nodemon
 
 nodemon server
+
+npm i mongoose

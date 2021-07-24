@@ -1,9 +1,12 @@
 import React from 'react'
-import products from '../Mockdata/product'
+// import products from '../Mockdata/product'
 import { Money } from "react-format";
 
 
 export default function Productdes({match}) {
+    const products = [];
+
+
     const productId = match.params.id;
     const product = products.find(product => product.id == productId)
     return (
