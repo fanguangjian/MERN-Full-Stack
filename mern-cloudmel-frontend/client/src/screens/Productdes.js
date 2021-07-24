@@ -35,4 +35,5 @@ export default function Productdes({match}) {
                 </div>
             </div>
         </div>
+    )
 }
