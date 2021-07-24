@@ -8,15 +8,22 @@
  */
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-// import './styles.less';
+import Homescreen from './screens/Homescreen';
+import Productdes from './screens/Productdes';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>Mern CloudMel</h1> */}
       <Navbar></Navbar>
+      <BrowserRouter>
+        <Route path="/" component={Homescreen} exact/>
+        <Route path="/product/:id" component={Productdes}/>
+      </BrowserRouter>
+      {/* <Homescreen/> */}
     </div>
   );
 }

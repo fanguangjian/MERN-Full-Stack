@@ -11,7 +11,6 @@ import React from "react";
 export default function Navbar() {
   return (
     <div>
-      {/* <h1>Mern CloudMel</h1> */}
       <nav className="navbar navbar-expand-lg ">
         <a className="navbar-brand" href="#">
           Mern CloudMel
@@ -27,21 +26,12 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
+
+        <div className="collapse navbar-collapse " id="navbarNav">
+          <ul className="navbar-nav" style={{"margin-left":"auto"}}>   
+            <li className="nav-item ml-auto">
               <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Features
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
+                Login
               </a>
             </li>
             <li className="nav-item">
@@ -51,12 +41,13 @@ export default function Navbar() {
                 tabindex="-1"
                 aria-disabled="true"
               >
-                Disabled
+               <i class="fas fa-shopping-cart"></i>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> 
+
     </div>
   );
 }
