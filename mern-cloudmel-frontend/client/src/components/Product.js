@@ -8,7 +8,7 @@ export default function Product({ pro }) {
     <div className="col-md-3 m-5 card p-2 text-start">
       <div>
         <Link to={`product/${pro.id}`}>
-            <img src={pro.image} alt="" className="img-fluid" />
+            <img src={pro.image} className="img-fluid" />
             <h1 style={{ "font-size": "18px" }}>{pro.name}</h1>        
             <Rating
                 style={{color:'orange'}}

@@ -15,7 +15,7 @@ export default function Navbar() {
         <a className="navbar-brand" href="#">
           Mern CloudMel
         </a>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -25,7 +25,7 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
 
         <div className="collapse navbar-collapse " id="navbarNav">
           <ul className="navbar-nav" style={{"margin-left":"auto"}}>   
