@@ -1,13 +1,27 @@
+/*
+ * @Author: your name
+ * @Date: 2021-07-24 00:08:10
+ * @LastEditTime: 2021-07-25 15:19:58
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /mern-cloudmel/client/src/index.js
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { Provider } from 'react-redux';
+import store  from './store'
+ 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+
+  <Provider store={store}>
+  <App />
+  </Provider>,
   document.getElementById('root')
 );
 

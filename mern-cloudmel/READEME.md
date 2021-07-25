@@ -1,7 +1,7 @@
 <!--
  * @Author: G.F
  * @Date: 2021-07-23 23:54:53
- * @LastEditTime: 2021-07-24 00:23:14
+ * @LastEditTime: 2021-07-25 14:55:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /MERN-Full-Stack/mern-cloudmel-frontend/READEME.md
@@ -17,6 +17,9 @@ npm i react-rating
 npm install react-rating-stars-component --save
 
 npm i axios
+<!-- npm redux react-redux -->
+npm install react-redux
+npm i redux-thunk
 
 # Node
 
