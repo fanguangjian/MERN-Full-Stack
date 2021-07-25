@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-24 13:42:47
- * @LastEditTime: 2021-07-25 18:52:24
+ * @LastEditTime: 2021-07-25 21:30:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /mern-cloudmel/client/src/screens/Productdes.js
@@ -10,6 +10,7 @@ import React, { useEffect, useState } from 'react'
 // import products from '../Mockdata/product'
 import { Money } from "react-format";
 import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from '../actions/cartAction';
 import { getProductById } from '../actions/productActions';
 
 
@@ -19,16 +20,19 @@ export default function Productdes({match}) {
         state => state.getProductByIdReducer
     );
     const { loading, product, error } = getRroductByIdState;
-
     const productId = match.params.id;
     const dispatch = useDispatch();
 
     useEffect(() => {
         // dispatch action
         dispatch(getProductById(productId));
-      }, []);
-
+      }, []);      
     // const product = products.find(product => product.id == productId)
+    const [qty, setQty] = useState(1);
+
+    function addtoCart(){
+        dispatch(addToCart(product, qty));
+    }
     return (
         <div>
             {loading ? (
@@ -53,13 +57,13 @@ export default function Productdes({match}) {
                                 <h1>Price:<Money>{product.price}</Money></h1>
                                 <hr />
                                 <h1>Select Qty:</h1>
-                                <select name="" id=""  className="">
+                                <select value={qty} onChange={(e)=> setQty(e.target.value)}>
                                     {[...Array(product.countInStock).keys()].map((x,i)=>{
-                                        return <option value="{i+1}">{i+1}</option>
+                                        return <option value={i+1}>{i+1}</option>
                                     })}
                                 </select>
                                 <hr />
-                                <button className="btn btn-dark">Add to Cart</button>
+                                <button className="btn btn-dark" onClick={addtoCart}>Add to Cart</button>
                             </div>
                         </div>
                     </div>
