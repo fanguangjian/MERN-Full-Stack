@@ -21,6 +21,8 @@ npm i axios
 npm install react-redux
 npm i redux-thunk
 
+npm i redux-devtools-extension
+
 # Node
 
 npm init
@@ -31,3 +33,4 @@ npm i nodemon
 nodemon server
 
 npm i mongoose
+npm i body-parser
