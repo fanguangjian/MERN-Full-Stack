@@ -37,3 +37,61 @@ h1{
   height: 300px !important;
 }
 
+p{
+  text-align: left !important;
+}
+
+h2{
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+.btn{
+  background-color: black !important;
+  color: white !important;
+  width: 200px !important;
+  
+}
+
+input{
+  box-shadow: none !important;
+  margin-top: 10px !important;
+  border: 1px solid black !important;
+}
+h3{
+  font-size: 16px !important;
+}
+.orderitem h1{
+  font-size:16px !important
+}
+
+.admin{
+  margin-top: 10px;
+  background-color: rgb(0, 6, 61) !important;
+}
+.admin li{
+  
+  color:white !important;
+  list-style-type: none !important;
+  display: inline !important;
+  margin-left: 20px !important;
+  
+}
+
+.admin li a{
+  color:white !important;
+}
+
+.dropdown-toggle{
+  background-color: rgb(1, 1, 51) !important;
+  border:none !important;
+  box-shadow: none !important;
+}
+
+select{
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+th , td{
+  text-align:  left !important;
+}
+

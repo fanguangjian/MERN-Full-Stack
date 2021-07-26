@@ -1,7 +1,7 @@
 /*
  * @Author: G.F
  * @Date: 2021-07-24 00:08:10
- * @LastEditTime: 2021-07-25 22:10:04
+ * @LastEditTime: 2021-07-26 20:15:48
  * @LastEditors: Please set LastEditors
  * @Description: 
  * @FilePath: /MERN-Full-Stack/mern-cloudmel-frontend/client/src/App.js
@@ -14,6 +14,8 @@ import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
 import Productdes from './screens/Productdes';
 import Cartscreen from './screens/cartScreen';
+import Loginscreen from './screens/Login';
+import Registerscreen from './screens/Register';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/" component={Homescreen} exact/>
         <Route path="/product/:id" component={Productdes}/>
         <Route path="/cart" component={Cartscreen} />
+        <Route path="/login" component={Loginscreen}/>
+        <Route path="/register" component={Registerscreen}/>
 
       </BrowserRouter>
       {/* <Homescreen/> */}
